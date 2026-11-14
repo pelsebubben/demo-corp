@@ -1,0 +1,8 @@
+id: demo-powershell-execution
+name: Demo - PowerShell Process Execution
+description: Illustrative XDR analytics rule for repository and integration demos; not intended for production use.
+severity: low
+query: |
+  dataset = xdr_data
+  | filter event_type = ENUM.PROCESS and action_process_image_name contains "powershell"
+  | fields _time, agent_hostname, actor_process_image_name, action_process_image_name, action_process_image_command_line
