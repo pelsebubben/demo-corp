@@ -2,7 +2,7 @@ id: fa2dbd7d-0db5-4b9e-91f8-8547e6059050
 name: High Privileged Role assigned
 version: 1.0.1
 kind: Scheduled
-description: A user was assigned a high privileged role. Testing pipeline
+description: A user was assigned a high privileged role. !!!!
 severity: Low
 queryFrequency: 20m
 queryPeriod: 20m
